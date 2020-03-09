@@ -9,6 +9,9 @@ header {
     justify-content: center;
     text-align: center;
     background-color: @wild-sand;
+    @media (max-width: 500px){
+        width: 100%;
+    }
     div {
         font-size: 30px;
         width: 80%;
@@ -31,6 +34,9 @@ header {
         text-align: center;
         margin-bottom: 1%;
         text-decoration: none;
+        @media @phone{
+            width: 70%;
+        }
     }
     img {
         display: flex;
@@ -38,6 +44,10 @@ header {
         justify-content: center;
         align-items: center;
         border-radius: 5px;
+        @media @phone{
+            display: flex;
+            width: 100%;
+        }
     }
     
 }
