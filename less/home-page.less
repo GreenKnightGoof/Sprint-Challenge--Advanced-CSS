@@ -108,12 +108,17 @@
       }
 
       .btn {
-        .button-layout();
+        .button-layout(white);
         @media @phone{
           width: 100%;
-          height: 70px;
+          height: 60px;
           margin-bottom: 4%;
-          button:hover {
+          .btn {
+            border: none;
+            height: 100%;
+            margin-top: 4%;
+          }
+          .button:hover {
             background-color: white;
             color: @btn-bg-color;
           }
