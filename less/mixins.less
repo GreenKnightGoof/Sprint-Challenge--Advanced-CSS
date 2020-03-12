@@ -1,1 +1,33 @@
 // Mixins Here
+
+.button-layout(@button-color){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: @btn-bg-color;
+    color: @button-color;
+    width: 30%;
+    height: 50px;
+    border-radius: 7px;
+    font-size: 20px;
+    .btn {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    button:hover {
+        background-color: white;
+        color: @btn-bg-color;
+    }
+}
+
+.flex-style(){
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-align(){
+    align-items: center;
+    justify-content: center;
+}
